@@ -1,0 +1,354 @@
+body {
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-image: url("../images/leaves-pattern.png");
+    margin: 0px;
+    overflow: scroll;
+    line-height: 1.6;
+}
+
+header {
+    margin-top: 0px;
+    height: 80px;
+    background-color: #ffffff;
+    border-bottom: 3px solid #dddddd;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 245px 465px 60px 21px 79px 21px 69px 1fr;
+    grid-template-areas: ". name . about vl1 portfolio vl2 contact ."
+}
+
+footer {
+    color: white;
+    border-color: #4aaaa5;
+    border-top-color: #4aaaa5;
+    border-style: solid;
+    background-color: #666666;
+    text-align: center;
+    border-width: 0px;
+    border-top-width: 10px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+h1, h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: white;
+    background-color: #4aaaa5;
+    border-color: #cccccc;
+    line-height: 100%;
+    float: left;
+    padding-left: 20px;
+    padding-top: 22px;
+    padding-bottom: 26px;
+    margin: 0px;
+    grid-area: name;
+}
+
+h2 {
+    color: #4aaaa5;
+    margin-top: 0px;
+}
+
+h3 {
+    font-weight: 300;
+    display: inline-block;
+}
+
+input {
+    width: 890px;
+    padding: 10px 0px 10px 10px;
+}
+
+input[type=submit] {
+    color: white;
+    width: 150px;
+    background-color: #4aaaa5;
+    text-decoration: none;
+    border: none;
+    padding: 15px 30px;
+}
+
+textarea.message {
+    width: 100%;
+    height: 200px;
+}
+
+a:hover {
+    color: #4aaaa5;
+}
+
+hr {
+    margin: 0px;
+    height: 5px;
+    width: 100%;
+    border: 0;
+    background-color: #dddddd;
+}
+
+.navigation {
+    text-decoration: none;
+    color: #777777;
+}
+
+div.container {
+    overflow: auto;
+    width: 900px;
+    margin: auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 80px;
+}
+
+.vl {
+    display: inline-block;
+    width: 0px;
+    margin: 0px;
+    margin-left: 5px;
+    padding: 0px;
+    border-left: 1px solid #cccccc;
+    height: 1.5em;
+    line-height: 0%;
+}
+
+p.bio {
+    text-align: justify;
+    margin: 30px;
+}
+
+.about-img {
+    margin: 30px 30px 15px 0px;
+    width: 250px;
+    height: auto;
+    float: left;
+}
+
+.cleo {
+    width: 250px;
+    height: auto;
+    float: right;
+    margin: 0px 0px 30px 30px;
+}
+
+div.gallery {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+a.item {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+img.gallery-item {
+    position: relative;
+    max-width: 100%;
+    max-height: auto;
+}
+
+div.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 50%);
+    color: #4aaaa5;
+    opacity: 40%;
+    width: 400px;
+    padding: 20px;
+}
+
+a.item:hover {
+    transform: scale(1.05);
+}
+
+p.footer {
+    text-align: center;
+}
+
+#about-nav {
+    grid-area: about;
+    align-self: center;
+}
+
+#vl1 {
+    grid-area: vl1;
+    align-self: center;
+}
+
+#portfolio-nav {
+    grid-area: portfolio;
+    align-self: center;
+}
+
+#vl2 {
+    grid-area: vl2;
+    align-self: center;
+}
+
+#contact-nav {
+    grid-area: contact;
+    align-self: center;
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        grid-template-columns: 1fr 245px 225px 60px 21px 79px 21px 69px 1fr;
+    }
+    div.container {
+        width: 670px;
+        margin: 0px 1fr 0px 1fr;
+        padding: 20px 20px 20px 20px;
+    }
+    h2 {
+        width: 660px;
+        margin-right: 0px;
+    }
+    input {
+        width: 660px;
+        padding: 10px;
+        margin-right: 0px;
+    }
+    form {
+        width: 670px;
+        margin-right: 0px;
+    }
+    input[type=text] {
+        width: 646px;
+        margin: 0px;
+    }
+    textarea.message {
+        width: 664px;
+        height: 200px;
+        margin: 0px;
+    }
+    hr {
+        margin-right: 0px;
+        width: 670px;
+    }
+    div.galllery {
+        padding: 0px 20px 0px 10px;
+    }
+    div.centered {
+        width: 325px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .about-img {
+        margin: 20px 20px 20px 0px;
+    }
+    .cleo {
+        margin: 10px 0px 20px 20px;
+    }
+    p.bio {
+        margin: 20px 0px 45px 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+   div.container {
+        width: 542px;
+   }
+   header {
+        grid-template-columns: 1fr 245px 90px 60px 21px 79px 21px 69px 1fr;
+    }
+    h2 {
+        width: 542px;
+    }
+    input {
+        width: 542px;
+    }
+    form {
+        width: 542px;
+    }
+    input[type=text] {
+        width: 518px;
+    }
+    textarea.message {
+        width: 536px;
+    }
+    hr {
+        width: 542px;
+    }
+    div.centered {
+        width: 261px;
+    }
+    .about-img {
+        margin: 20px 0px 20px 20px;
+        float: right;
+    }
+    .cleo {
+        margin: 20px 0px 20px 20px;
+        float: right;
+    }
+    p.bio {
+        margin: 20px 0px 20px 1px;
+    }
+}
+@media screen and (max-width: 640px) {
+    div.container {
+       width: 320px;
+    }
+    header {
+        height: 150px;
+        grid-template-columns: 1fr 60px 21px 79px 21px 69px 1fr;
+        grid-template-rows: 80px 70px;
+        grid-template-areas: "name name name name name name name" ". about vl1 portfolio vl2 contact .";
+    }
+    h1 {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: center;
+    }
+    h2 {
+        width: 320px;
+    }
+    input {
+        width: 320px;
+    }
+    form {
+        width: 320px;
+    }
+    input[type=text] {
+        width: 296px;
+    }
+    textarea.message {
+        width: 314px;
+    }
+    hr {
+        width: 320px;
+    }
+    div.gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+    div.centered {
+        width: 320px;
+    }
+    .about-img {
+        margin: 20px 0px 0px 0px;
+        float: none;
+        width: 100%;
+    }
+    .cleo {
+        margin: 0px;
+        float: none;
+        width: 100%;
+    }
+    p.bio {
+        margin: 20px 0px 20px 1px;
+    }
+}
