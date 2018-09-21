@@ -164,7 +164,7 @@ div.centered {
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 50%);
-    color: #4aaaa5;
+    color: white;
     opacity: 40%;
     width: 400px;
     padding: 20px;
